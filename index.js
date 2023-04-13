@@ -141,12 +141,6 @@ submit.addEventListener("click", (e) => {
     result = "Nueroticism";
   }
   scores.style.display = "";
-  document.getElementById(
-    "scoreOfTest"
-  ).innerHTML = `<h3 class="p-3 m-3 text-dark">
-    The Personality you are close to is 
-    <small class="text-primary">${result}</small>
-  </h3>`;
 
   $(document).ready(function () {
     donutChart();
