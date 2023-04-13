@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Personality</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" id="Navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Test</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="oneAlert" class="m-3">
+      
+    </div>
+    <div id="nameIdAndGender m-3">
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Name : </span>
+        <input type="text" id="name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">ID : </span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">Gender : </span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <div class="text-center m-3">
+        <button  class="btn btn-primary text " id="nameEntered">
+         Done
+        </button>
+      </div>
+
+    </div>
+    <div id="testQuestions" class="m-3 p-3">
+        <h1>Test</h1>
+        <div class="question m-3 bg-light text-black p-3" id="question1">
+            <p>What motivates you in life?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Money
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Power
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Personal growth and development
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Social status
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question2">
+            <p>How do you handle stressful situations?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Avoid them
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Tackle them head-on
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Talk to someone about them
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Ignore them and hope they go away
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question3">
+            <p>What are your top values in life?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Wealth
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Success
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Honesty
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Family
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question4">
+            <p>How do you spend your free time?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="q4" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Watching TV
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="q4" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Reading
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="q4" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Socializing with friends and family
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="q4" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Exercising
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question5">
+            <p>How do you define success?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="q5" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Wealth
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="q5" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Power
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="q5" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Happiness
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="q5" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Accomplishments
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question6">
+            <p>What do you think are your strengths and weaknesses?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="q6" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  I don't have any weaknesses
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="q6" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I am very organized and detail-oriented
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="q6" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I am not good at public speaking
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="q6" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I am very creative and imaginative
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question7">
+            <p>How do you approach problem-solving?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="q7" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  I avoid problems whenever possible
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="q7" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I gather information and analyze the situation
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="q7" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I rely on my intuition to solve problems
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="q7" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I let others solve problems for me
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question8">
+            <p>How do you deal with criticism?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="q8" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  I ignore it
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="q8" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I get defensive
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="q8" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I try to learn from it
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="q8" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I avoid situations where I might be criticized
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question9">
+            <p>What are your favorite books/movies/music?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="q9" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Action and adventure
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="q9" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Romance and drama
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="q9" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Science fiction and fantasy
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="q9" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Documentary and non-fiction
+                </label>
+              </div>
+        </div>
+        <div class="question m-3 bg-light text-black p-3" id="question10">
+            <p>What kind of people do you enjoy being around?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="q10" value="A" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Those who are similar to me
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="q10" value="B">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Those who are different from me
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="q10" value="C">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Those who are always positive
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="q10" value="D">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Those who are always negative
+                </label>
+              </div>
+        </div>
+        
+    </div>
+    <div class="text-center">
+      <button  class="btn btn-primary text " id="submit">
+       Submit the test
+      </button>
+    </div>
+
+    <div class="ScoreOfTest m-3 p-3" id="scores">
+        <h1>Personality Reveal</h1>
+        <div id="scoreOfTest">
+
+        </div>
+
+    </div>
+    <div id="leaderBoard" class="leaderB m-3 p-3">
+        <h1>Previous Scores</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">ID</th>
+                <th scope="col">Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>21K-3451</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>21K-3457</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Some Girl</td>
+                <td>21K-3057</td>
+                <td>Female</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div id="suggestions" class="suggestion m-3 p-3">
+      <h1>Suggestion</h1>
+      <div class="card">
+        <div class="card-body m-3 p-3">
+          This will be the suggestion for you.
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
